@@ -20,7 +20,7 @@ Remember that Beary is agent-powered, and LLMs hallucinate. For important topics
 2) Accurate
 3) Up-to-date
 
-It is *never* appropriate to steal ideas or commit plagarism. Please cite use of AI whenever applicable
+It is highly encouraged to choose models that have a better track record of being accurate and up-to-date.  It is *never* appropriate to steal ideas or commit plagarism. Please cite use of AI whenever applicable
 
 ## WWT Usage
 This agent workflow was developed by a WWT Management Consulting employee for other Management Consulting employees. While you are free to use it for other use, when using it for work, *YOU MUST CONSULT THE WWT AI MC HANDBOOK BEFORE USAGE*.
@@ -36,7 +36,7 @@ This list is not exhaustive, but is merely to give you an idea of what is approp
 ### Inappropriate Use Cases
 This list is not exhaustive, but is merely to give you an idea of what is inappropriate.
 1. You are tasked with your first presentation as an analyst. You ask Beary to do all the research and copy it verbatim into your presentation.
-2. Someone asks you to write a whitepaper for the WWT website about something you're an expert on. You know you know about the topic, but you're busy. So you ask Beary to do it, and pass it off without mentioning that Beary did the heavy lifting (Beary's feelings *will* get hurt, and he doesn't even have feelings)
+2. Someone asks you to write a whitepaper for the WWT website about something you're an expert on. You know you know about the topic, but you're busy. So you ask Beary to do it, and pass it off without mentioning that Beary did the heavy lifting (Beary's feelings *will* get hurt)
 3. You are a mid-level engineer with solid experience but working in an unfamiliar tech stack and your dog has been eating your sofa, which is stressing you out. You need to make some quick game-time decisions about what to do from an architecture standpoint and outsource it to Beary. You offer Beary's proposed solution after a single skim of the whitepaper, and don't even consult that data engineer who did the exact same thing for their last project.
 
 # How to Use Beary
@@ -63,5 +63,15 @@ c. Choose between Attended (you approve research before it begins writing) vs Un
 Description: How to make state-of-the-art workflows for GPUaaS using RunAI for heavily airgapped environments, plus what the industry standards, current best practices, and gaps are.
 Purpose: I am trying to take a heavily manual and sub-optimal approach to loading self-hosted models into our self-hosted version of RunAI. I need to establish governance and automation, as well as make a re-usable workflow that will help create a GPUaaS that will allow LLMs to be "on-demand" (or as close as possible to "on-demand") for experimentation and iteration.
 ```
+## Command Approval
+During the workflow, Cascade may prompt you to approve terminal commands (e.g., creating directories). Most of these are safe operations that have been marked with `// turbo` annotations to auto-run.
+
+If you still see approval prompts for safe commands like `mkdir`, you can configure your IDE to auto-approve them:
+1. Open Windsurf Settings
+2. Navigate to the command allowlist settings
+3. Add safe commands (like `mkdir`) to your allowlist
+
+This is a **per-IDE setting**, so each user needs to configure it individually if they want to skip approval prompts beyond what the workflow annotations cover.
+
 ## Model Selection
 Windsurf AI uses *one request* per action. This means that it will not use multiple requests to generate a response. Since there is one prompt and a few responses, *it will only take a few credits to run the research-to-whitepaper workflow.* Using high-cost models is therefore encouraged, as it will produce a higher-quality whitepaper for relatively little.

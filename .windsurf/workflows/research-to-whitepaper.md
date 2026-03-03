@@ -62,6 +62,7 @@ If `.windsurf/USER.md` exists, read it to understand the user's audience and res
 Follow `.windsurf/skills/internet-research/SKILL.MD`, **skipping step 1** (User Context) since it was already read above. **Pass the MODE (HIBERNATION or HYPERPHAGIA) to the skill.**
 
 This includes:
+// turbo
 - Directory setup (step 3)
 - Initial research with General Understanding questions (step 4.1)
 - In-depth research with Deeper Dive questions (step 4.2)
