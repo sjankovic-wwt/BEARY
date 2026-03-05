@@ -10,7 +10,7 @@ Welcome to BEARY, the agentic workflow for Background Research!
 
 
 # What Beary Does
-Beary is an agentic workflow that takes a simple prompt and performs internet research, takes notes, and compiles its findings into a whitepaper, complete with citations.
+Beary is an agentic workflow that takes a simple prompt and performs internet research, takes notes, and compiles its findings into a whitepaper, complete with citations. You can customize both the audience Beary writes for as well as the sources he looks at.
 
 Currently, Beary as designed is only supported in Cascade/Windsurf, but you are super welcome to tweak it to fit your preferred agent!
 
@@ -20,24 +20,8 @@ Remember that Beary is agent-powered, and LLMs hallucinate. For important topics
 2) Accurate
 3) Up-to-date
 
-It is highly encouraged to choose models that have a better track record of being accurate and up-to-date.  It is *never* appropriate to steal ideas or commit plagarism. Please cite use of AI whenever applicable
+It is highly encouraged to choose models that have a better track record of being accurate and up-to-date.  It is *never* appropriate to steal ideas or commit plagarism or to pass this work off as your own research. Please cite use of AI whenever applicable.
 
-## WWT Usage
-This agent workflow was developed by a WWT Management Consulting employee for other Management Consulting employees. While you are free to use it for other use, when using it for work, *YOU MUST CONSULT THE WWT AI MC HANDBOOK BEFORE USAGE*.
-
-### Appropriate Work Use Cases
-This list is not exhaustive, but is merely to give you an idea of what is appropriate.
-1. You have to attend a talk/conference/meeting about something you don't know much about and you would like a rundown of all the big topics in the field.
-2. You are on a busy project and want to keep an overall eye on industry trends.
-3. You need to give a presentation or get assigned to a project and don't know where to start. You use Beary to get a medium-depth overview of the topic, and follow up on sources as well as consult coworkers with expertise.
-4. Your boss asks you for some background on a low-stakes topic. You ask her (or him, I guess) if you can use AI to do the heavy lifting and she is fine with it.
-5. You have to scope out a complicated solition to a problem and want an overview of the industry trends and best practices. Beary's paper is your starting point.
-
-### Inappropriate Use Cases
-This list is not exhaustive, but is merely to give you an idea of what is inappropriate.
-1. You are tasked with your first presentation as an analyst. You ask Beary to do all the research and copy it verbatim into your presentation.
-2. Someone asks you to write a whitepaper for the WWT website about something you're an expert on. You know you know about the topic, but you're busy. So you ask Beary to do it, and pass it off without mentioning that Beary did the heavy lifting (Beary's feelings *will* get hurt)
-3. You are a mid-level engineer with solid experience but working in an unfamiliar tech stack and your dog has been eating your sofa, which is stressing you out. You need to make some quick game-time decisions about what to do from an architecture standpoint and outsource it to Beary. You offer Beary's proposed solution after a single skim of the whitepaper, and don't even consult that data engineer who did the exact same thing for their last project.
 
 # How to Use Beary
 1. Clone repository locally or copy files into your own Cascade project.
@@ -56,7 +40,12 @@ b. Choose between Hibernation mode (token-conservative) vs Hyperphagia mode (tok
 c. Choose between Attended (you approve research before it begins writing) vs Unattended (it runs with no further user contact)
 
 
-# Tips and Tricks
+# Getting Started
+
+## Set USER.md preferences
+In order to direct Beary, you need to set your preferences in the `.windsurf/USER.md` file for:
+- Intended Audience (e.g., engineer, data scientist, racing hobbyist, etc.)
+- Desired Sources (e.g., code repositories, academic papers, blogs, etc.)
 
 ## Sample prompt
 ```/research-to-whitepaper TOPIC: runai-gpuaas-airgapping
