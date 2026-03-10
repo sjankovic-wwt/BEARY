@@ -25,7 +25,7 @@ Do not use sources from:
 
 Specify where completed whitepaper artifacts should be moved after the workflow completes.
 
-**Default**: `whitepaper-output/`
+DEFAULT_OUTPUT_PATH: whitepaper-output
 
 To customize, set the path below:
 - **Relative paths** (e.g., `whitepaper-output`, `docs/research`) are relative to the project root
