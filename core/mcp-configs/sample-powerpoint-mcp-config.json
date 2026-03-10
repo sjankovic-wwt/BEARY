@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "ppt": {
+      "command": "/path/to/your/python3",
+      "args": [
+        "/path/to/Office-PowerPoint-MCP-Server/ppt_mcp_server.py"
+      ],
+      "env": {
+        "PYTHONPATH": "/path/to/Office-PowerPoint-MCP-Server",
+        "PPT_TEMPLATE_PATH": "/path/to/Office-PowerPoint-MCP-Server/templates"
+      }
+    }
+  }
+}

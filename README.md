@@ -15,7 +15,7 @@
 
 ---
 
-## 🎯 What BEARY Does
+## What BEARY Does
 
 BEARY is a suite of **independent, modular tools** that help with common office and personal productivity tasks:
 
@@ -27,7 +27,7 @@ BEARY is a suite of **independent, modular tools** that help with common office 
 
 ---
 
-## 🚀 Quick Start (Pick Your Tool)
+##  Quick Start (Pick Your Tool)
 
 ### Just Need Research?
 → **[Research Tool Documentation](tools/research/README.md)**
@@ -60,7 +60,7 @@ BEARY/
 
 ---
 
-## 🛠️ Available Tools
+## Available Tools
 
 ### 1. Research Tool
 **Purpose:** Efficiently gather and organize information on a topic
@@ -76,8 +76,6 @@ BEARY/
 - Make decisions about what's important
 
 **Use when:** You need to quickly get up to speed on a topic, gather sources, or create a foundation for your own work.
-
-→ **[Full Documentation](tools/research/README.md)**
 
 ---
 
@@ -96,6 +94,8 @@ BEARY/
 - Replace your storytelling
 
 **Use when:** You have content ready and need to format it into professional slides quickly.
+
+**Note:** Requires external PowerPoint MCP server installation (instructions in tool README).
 
 → **[Full Documentation](tools/presentations/README.md)**
 

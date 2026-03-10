@@ -4,7 +4,7 @@
 
 ---
 
-## 🎯 What This Tool Does
+## What This Tool Does
 
 The Presentation Tool helps you create professional PowerPoint presentations by:
 - Analyzing existing templates to match your style
@@ -16,7 +16,7 @@ The Presentation Tool helps you create professional PowerPoint presentations by:
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Windsurf IDE with Cascade
@@ -25,40 +25,46 @@ The Presentation Tool helps you create professional PowerPoint presentations by:
 
 ### Installation
 
-1. **Navigate to the presentation tool:**
-   ```bash
-   cd tools/presentations/powerpoint-mcp-server
-   ```
+This tool uses an external MCP server for PowerPoint automation.
 
-2. **Install dependencies:**
+1. **Install the PowerPoint MCP Server** (outside this repo):
    ```bash
+   cd ~/code-projects  # or wherever you keep projects
+   git clone https://github.com/GongRzhe/Office-PowerPoint-MCP-Server.git
+   cd Office-PowerPoint-MCP-Server
    pip install python-pptx 'mcp[cli]>=1.8.0' Pillow 'fonttools>=4.60.2'
    ```
 
-3. **Configure MCP server in Windsurf:**
-   Add this to your Windsurf MCP settings:
+2. **Configure MCP server in Windsurf:**
+   
+   Copy the template from `core/mcp-configs/powerpoint-mcp-config.json` and update paths for your system.
+   
+   Add to your Windsurf MCP settings:
    ```json
    {
      "mcpServers": {
        "ppt": {
-         "command": "/path/to/python3",
+         "command": "/path/to/your/python3",
          "args": [
-           "/path/to/BEARY/tools/presentations/powerpoint-mcp-server/ppt_mcp_server.py"
+           "/path/to/Office-PowerPoint-MCP-Server/ppt_mcp_server.py"
          ],
          "env": {
-           "PYTHONPATH": "/path/to/BEARY/tools/presentations/powerpoint-mcp-server",
-           "PPT_TEMPLATE_PATH": "/path/to/BEARY/tools/presentations/powerpoint-mcp-server/templates"
+           "PYTHONPATH": "/path/to/Office-PowerPoint-MCP-Server",
+           "PPT_TEMPLATE_PATH": "/path/to/Office-PowerPoint-MCP-Server/templates"
          }
        }
      }
    }
    ```
 
-4. **Restart Windsurf** to load the MCP server.
+3. **Restart Windsurf** to load the MCP server.
+
+### Security Note
+The PowerPoint MCP server repository is archived (March 2026). See security audit details in the [installation notes](https://github.com/GongRzhe/Office-PowerPoint-MCP-Server) from the original repo.
 
 ---
 
-## 📖 How to Use
+## How to Use
 
 ### Basic Workflow
 
@@ -85,7 +91,7 @@ Once configured, you can use natural language commands in Windsurf:
 
 ---
 
-## 🛠️ Available Features
+## Available Features
 
 ### Presentation Management
 - Create new presentations
@@ -128,7 +134,7 @@ presentations/
 
 ---
 
-## 🎨 Working with Templates
+## Working with Templates
 
 ### Using Your Own Templates
 
@@ -160,12 +166,8 @@ presentations/
 - **No cloud uploads** - Everything runs on your computer
 - **No network requests** - Fully offline capable
 
-### Security Audit Completed
-See `INSTALLATION_NOTES.md` for full security audit details.
 
----
-
-## ⚙️ Configuration
+## Configuration
 
 ### Environment Variables
 
