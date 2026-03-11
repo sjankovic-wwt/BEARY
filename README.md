@@ -14,7 +14,7 @@ Welcome to BEARY, the agentic workflow for Background Research!
 npx skills add sally-jankovic/BEARY
 ```
 
-For full install/update/uninstall options, see [INSTALL.md](./INSTALL.md).
+For install details, see [INSTALL.md](./INSTALL.md).
 
 # What Beary Does
 Beary is an agentic workflow that takes a simple prompt and performs internet research, takes notes, and compiles its findings into a whitepaper, complete with citations. You can customize both the audience Beary writes for as well as the sources he looks at.
@@ -31,7 +31,7 @@ It is highly encouraged to choose models that have a better track record of bein
 
 
 # How to Use Beary
-1. Install via `scripts/skills.sh install /path/to/your/project` (or clone/copy manually).
+1. Install via `npx skills add sally-jankovic/BEARY`.
 
 2a. In your cascade terminal, run the slash command:
 `/research-to-whitepaper`.
