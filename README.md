@@ -23,9 +23,15 @@ Remember that Beary is agent-powered, and LLMs hallucinate. For important topics
 It is highly encouraged to choose models that have a better track record of being accurate and up-to-date.  It is *never* appropriate to steal ideas or commit plagiarism or to pass this work off as your own research. Please cite use of AI whenever applicable.
 
 
-# Install Beary (skills.sh)
+# Install Beary
 
-Install BEARY into any project as a single skill package:
+Install via skills registry (recommended):
+
+```bash
+npx skills add sally-jankovic/BEARY
+```
+
+Manual install via script:
 
 ```bash
 # from BEARY repo root
