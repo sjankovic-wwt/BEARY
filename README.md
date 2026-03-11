@@ -30,11 +30,7 @@ It is highly encouraged to choose models that have a better track record of bein
 
 
 # How to Use Beary
-1. Install:
-
-```bash
-npx skills add sally-jankovic/BEARY
-```
+1. Install using Quickstart above.
 
 2. Trigger BEARY in either way:
 
