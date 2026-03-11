@@ -32,19 +32,20 @@ It is highly encouraged to choose models that have a better track record of bein
 # How to Use Beary
 1. Install via `npx skills add sally-jankovic/BEARY`.
 
-2. In your Cascade terminal, run:
-   - `/research-to-whitepaper`
+2. Trigger BEARY in either way:
+   - Slash command: `/research-to-whitepaper`
+   - Natural language prompt, e.g.:
+     - "Research <topic> and create a whitepaper with citations"
+     - "Use BEARY to deep-dive <topic>"
+     - "Prepare a cited research brief on <topic>"
 
-3. Provide topic details:
+3. Provide topic details when prompted:
    - `TOPIC: my-topic`
    - `Description: What this topic is about.`
    - `Purpose (Optional): What you want to achieve with this topic or why you are interested in it.`
 
-4. Press Enter.
-
-5. Choose workflow options:
-   - If you do not provide a purpose, the agent will prompt you for one.
-   - Hibernation mode (token-conservative) vs Hyperphagia mode (token-generous)
+4. Confirm workflow options:
+   - Hibernation (token-conservative) vs Hyperphagia (token-generous)
    - Attended (approve before writing) vs Unattended (no further user contact)
 
 
