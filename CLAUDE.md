@@ -1,1 +1,1 @@
-AGENTS.md
+beary/AGENTS.md
