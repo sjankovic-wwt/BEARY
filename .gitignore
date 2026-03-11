@@ -3,3 +3,8 @@
 whitepaper-output/*
 tools
 tools*
+
+# macOS metadata
+.DS_Store
+**/.DS_Store
+._*

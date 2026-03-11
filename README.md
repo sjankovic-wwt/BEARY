@@ -20,7 +20,7 @@ Remember that Beary is agent-powered, and LLMs hallucinate. For important topics
 2) Accurate
 3) Up-to-date
 
-It is highly encouraged to choose models that have a better track record of being accurate and up-to-date.  It is *never* appropriate to steal ideas or commit plagarism or to pass this work off as your own research. Please cite use of AI whenever applicable.
+It is highly encouraged to choose models that have a better track record of being accurate and up-to-date.  It is *never* appropriate to steal ideas or commit plagiarism or to pass this work off as your own research. Please cite use of AI whenever applicable.
 
 
 # How to Use Beary
