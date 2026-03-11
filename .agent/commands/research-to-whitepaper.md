@@ -17,9 +17,9 @@ Before starting, you need:
 
 | Skill | Path | Purpose |
 |-------|------|---------|
-| Internet Research | `.windsurf/skills/internet-research/SKILL.MD` | Research execution steps |
-| References | `.windsurf/skills/references/SKILL.md` | Citation format rules |
-| Whitepaper Writing | `.windsurf/skills/whitepaper-writing/SKILL.md` | Whitepaper writing steps |
+| Internet Research | `.agent/skills/internet-research/SKILL.md` | Research execution steps |
+| References | `.agent/skills/references/SKILL.md` | Citation format rules |
+| Whitepaper Writing | `.agent/skills/whitepaper-writing/SKILL.md` | Whitepaper writing steps |
 
 ---
 
@@ -55,11 +55,11 @@ Record the user's choice as **ATTENDED** (yes) or **UNATTENDED** (no).
 
 ### 1. Read User Context (Once)
 
-If `.windsurf/USER.md` exists, read it to understand the user's audience and research priorities. This context applies to the entire workflow — do not re-read it in subsequent steps.
+If `.agent/USER.md` exists, read it to understand the user's audience and research priorities. This context applies to the entire workflow — do not re-read it in subsequent steps.
 
 ### 2. Execute Internet Research
 
-Follow `.windsurf/skills/internet-research/SKILL.MD`, **skipping step 1** (User Context) since it was already read above. **Pass the MODE (HIBERNATION or HYPERPHAGIA) to the skill.**
+Follow `.agent/skills/internet-research/SKILL.md`, **skipping step 1** (User Context) since it was already read above. **Pass the MODE (HIBERNATION or HYPERPHAGIA) to the skill.**
 
 This includes:
 // turbo
@@ -68,7 +68,7 @@ This includes:
 - In-depth research with Deeper Dive questions (step 4.2)
 - Review and synthesize notes (step 5)
 
-For citation formatting during research, refer to `.windsurf/skills/references/SKILL.md`.
+For citation formatting during research, refer to `.agent/skills/references/SKILL.md`.
 
 ### 3. Checkpoint: User Review (ATTENDED mode only)
  
@@ -86,7 +86,7 @@ Do not proceed until the user confirms.
 
 ### 4. Execute Whitepaper Writing
 
-Follow `.windsurf/skills/whitepaper-writing/SKILL.md`, **skipping steps 1 and 2** (User Context and Read Prompt) since context was already established.
+Follow `.agent/skills/whitepaper-writing/SKILL.md`, **skipping steps 1 and 2** (User Context and Read Prompt) since context was already established.
 
 This includes:
 - Read notes and references (step 3)
@@ -96,7 +96,7 @@ This includes:
 
 ### 5. Move Completed Whitepaper to Output Directory
 
-Check `.windsurf/USER.md` for the output path configuration:
+Check `.agent/USER.md` for the output path configuration:
 - Look for the `OUTPUT_PATH:` value in the "Output Path" section
 - If not specified or file doesn't exist, use `whitepaper-output/` as the default
 - The path can be either:

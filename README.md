@@ -43,7 +43,7 @@ c. Choose between Attended (you approve research before it begins writing) vs Un
 # Getting Started
 
 ## Set USER.md preferences
-In order to direct Beary, you need to set your preferences in the `.windsurf/USER.md` file for:
+In order to direct Beary, you need to set your preferences in the `.agent/USER.md` file for:
 - **Intended Audience** (e.g., engineer, data scientist, racing hobbyist, etc.)
 - **Desired Sources** (e.g., code repositories, academic papers, blogs, etc.)
 - **Output Path** (optional): Where completed whitepapers should be moved after the workflow completes
@@ -51,7 +51,7 @@ In order to direct Beary, you need to set your preferences in the `.windsurf/USE
 ### Configuring Output Path
 By default, completed whitepapers are moved to `whitepaper-output/` (which is gitignored). To customize this:
 
-1. Open `.windsurf/USER.md`
+1. Open `.agent/USER.md`
 2. Find the "Output Path" section
 3. Update the path in the comment: `<!-- OUTPUT_PATH: your-custom-path -->`
 
