@@ -60,6 +60,8 @@ Using the given TOPIC, create a working folder under `beary-scratchpad/{TOPIC}`.
 mkdir -p beary-scratchpad/{TOPIC}/notes beary-scratchpad/{TOPIC}/whitepaper
 ```
 
+> **Note:** In workflow mode, the bash block above runs automatically. In skill mode, create these directories using your available file tools instead.
+
 Then create the following files using templates from `.agents/skills/beary/templates/`:
 
 | File | Template |
