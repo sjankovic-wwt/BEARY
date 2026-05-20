@@ -53,14 +53,21 @@ If `.agents/skills/beary/USER.md` exists, read it first to understand the user's
 Read the prompt to understand the topic of interest and the purpose of the research.
 
 ## 3. Directory Setup
-Using the given TOPIC, create a working folder under `beary-scratchpad/{TOPIC}`. Within this folder, create `notes` and `whitepaper` directories. Create the following files using templates from `.agents/skills/beary/templates/`:
+Using the given TOPIC, create a working folder under `beary-scratchpad/{TOPIC}`. Within this folder, create `notes` and `whitepaper` directories:
 
-| File (under `beary-scratchpad/{TOPIC}/`) | Template |
+// turbo
+```bash
+mkdir -p beary-scratchpad/{TOPIC}/notes beary-scratchpad/{TOPIC}/whitepaper
+```
+
+Then create the following files using templates from `.agents/skills/beary/templates/`:
+
+| File | Template |
 |------|----------|
-| `notes/{TOPIC}-research-questions.md` | `.agents/skills/beary/templates/topic-research-questions.md` |
-| `notes/{TOPIC}-notes.md` | `.agents/skills/beary/templates/topic-notes.md` |
-| `whitepaper/{TOPIC}-references.md` | `.agents/skills/beary/templates/references.md` |
-| `whitepaper/{TOPIC}-whitepaper.md` | `.agents/skills/beary/templates/whitepaper.md` |
+| `beary-scratchpad/{TOPIC}/notes/{TOPIC}-research-questions.md` | `.agents/skills/beary/templates/topic-research-questions.md` |
+| `beary-scratchpad/{TOPIC}/notes/{TOPIC}-notes.md` | `.agents/skills/beary/templates/topic-notes.md` |
+| `beary-scratchpad/{TOPIC}/whitepaper/{TOPIC}-references.md` | `.agents/skills/beary/templates/references.md` |
+| `beary-scratchpad/{TOPIC}/whitepaper/{TOPIC}-whitepaper.md` | `.agents/skills/beary/templates/whitepaper.md` |
 
 ## 4. Research
 
@@ -134,17 +141,17 @@ Once all in-depth research questions have been answered, synthesize the "Deeper 
 
 ##### 4.2.2.2 Complex Topics
 For each subtopic, complete the following steps.
-1. Create a new file called `{subtopic}-notes.md` for your subtopic using the `.agents/skills/beary/templates/subtopic-notes.md` template.
-2. For each question in the subtopic, create a new section in the `{subtopic}-notes.md` file.
+1. Create a new file called `beary-scratchpad/{TOPIC}/notes/{subtopic}-notes.md` for your subtopic using the `.agents/skills/beary/templates/subtopic-notes.md` template.
+2. For each question in the subtopic, create a new section in the `beary-scratchpad/{TOPIC}/notes/{subtopic}-notes.md` file.
 3. Using your question's first search term, find some sources on the internet that answer your questions. 
 4. Read the sources. For each source that answers your questions, add the source to the list of citations in the `beary-scratchpad/{TOPIC}/whitepaper/{TOPIC}-references.md` file. 
-5. Write down your answers to the questions in the section of the `{subtopic}-notes.md` file *with citation*.
+5. Write down your answers to the questions in the section of the `beary-scratchpad/{TOPIC}/notes/{subtopic}-notes.md` file *with citation*.
 6. Repeat steps 3-5 for each search term under the question.
 7. Repeat steps 2-6 for each question in the subtopic.
 
 Once all questions in the subtopic have been answered, synthesize the subtopic:
 1. Review all answers and identify themes, agreements, and contradictions across sources.
-2. Add a summary of 1-2 paragraphs at the end of the `{subtopic}-notes.md` file with key takeaways. Ensure citations remain accurate.
+2. Add a summary of 1-2 paragraphs at the end of the `beary-scratchpad/{TOPIC}/notes/{subtopic}-notes.md` file with key takeaways. Ensure citations remain accurate.
 3. Repeat for each subtopic.
 
 
